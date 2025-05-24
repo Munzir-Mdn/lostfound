@@ -59,7 +59,8 @@ $loggedIn = isset($_SESSION["admin"]);
 </head>
 <body>
 <header>
-  <h2>Lost & Found Admin</h2>
+<div class="container">
+  <h1>Lost & Found Admin</h1>
   <nav>
     <a href="index.html">Home</a>
     <a href="report.html">Report Lost</a>
@@ -68,6 +69,7 @@ $loggedIn = isset($_SESSION["admin"]);
       <a href="?logout=true" style="color:yellow;">Logout</a>
     <?php endif; ?>
   </nav>
+</div>
 </header>
 
 <?php if ($loggedIn): ?>
