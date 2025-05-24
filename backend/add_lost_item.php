@@ -1,5 +1,5 @@
 <?php
-include 'db_config.php';
+require_once(__DIR__ . "/db_config.php");
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $name = $_POST['name'] ?? '';

@@ -1,5 +1,5 @@
 <?php
-require_once 'db_config.php';
+require_once(__DIR__ . "/db_config.php");
 header("Content-Type: application/json");
 
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["id"])) {
