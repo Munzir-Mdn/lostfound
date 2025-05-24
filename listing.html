@@ -23,11 +23,22 @@
   <section class="form-section">
     <h2>Lost and Found Items</h2>
 
-    <input type="text" id="searchInput" placeholder="Search items..." onkeyup="filterItems()">
+    <input type="text" id="searchInput" placeholder="Search items..." onkeyup="filterAdminItems()">
 
-    <div id="item-list">
-      <!-- JS items load here -->
-    </div>
+    <!-- ✅ Tambah table supaya JS boleh isi baris -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Date Lost</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- baris akan dimasukkan oleh script.js -->
+      </tbody>
+    </table>
   </section>
 
   <footer>
