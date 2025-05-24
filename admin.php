@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once(__DIR__ . "/db_config.php");
+require_once(__DIR__ . "/backend/db_config.php");
 
 $valid_user = "admin";
 $valid_pass = "admin123";
