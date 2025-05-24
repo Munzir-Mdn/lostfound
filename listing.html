@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lost and Found Items</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <img src="utm-logo.png" alt="UTM Logo" class="logo">
+      <h1>Lost & Found Assistant</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="report.html">Report Lost</a>
+        <a href="listing.html">View Items</a>
+        <a href="admin.php">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="form-section">
+    <h2>Lost and Found Items</h2>
+
+    <input type="text" id="searchInput" placeholder="Search items..." onkeyup="filterItems()">
+
+    <div id="item-list">
+      <!-- JS items load here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 WP TEAM | UTMKL Space</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
