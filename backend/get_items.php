@@ -1,5 +1,5 @@
 <?php
-require_once("__DIR__ . "/../db_config.php"");
+require_once("__DIR__ . "/db_config.php"");
 header("Content-Type: application/json");
 
 $sql = "SELECT id, name, description, date_lost, status FROM lost_items ORDER BY id DESC";

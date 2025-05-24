@@ -1,5 +1,5 @@
 <?php
-require_once("db_config.php"); // atau "backend/db_config.php" jika perlu
+require_once(__DIR__ . "/db_config.php"); // atau "backend/db_config.php" jika perlu
 
 // Semak sambungan
 if ($conn->connect_error) {
