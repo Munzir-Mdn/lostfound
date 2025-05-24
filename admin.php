@@ -55,22 +55,7 @@ $loggedIn = isset($_SESSION["admin"]);
 <head>
   <meta charset="UTF-8">
   <title>Admin Panel</title>
-  <style>
-    body { font-family: Arial; background: #f3f6f9; margin: 0; padding: 0; }
-    header { background: #004990; color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
-    nav a { color: white; margin-left: 15px; text-decoration: none; font-weight: bold; }
-    form { margin: 50px; }
-    input { padding: 8px; margin: 5px; }
-    button { padding: 8px 16px; }
-    table { margin: 30px; border-collapse: collapse; width: 90%; }
-    th, td { border: 1px solid #ccc; padding: 10px; }
-    .pending { background: orange; color: white; padding: 4px 10px; border-radius: 4px; }
-    .claimed { background: green; color: white; padding: 4px 10px; border-radius: 4px; }
-    .btn { padding: 5px 10px; text-decoration: none; border-radius: 4px; color: white; }
-    .btn-sm { font-size: 0.9em; }
-    .btn-success { background-color: green; }
-    .btn-danger { background-color: red; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
