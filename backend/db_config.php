@@ -1,9 +1,9 @@
 <?php
-$host = getenv("MYSQLHOST");
+$host = getenv("crossover.proxy.rlwy.net");
 $username = getenv("MYSQLUSER");
-$password = getenv("MYSQLPASSWORD");
-$database = getenv("MYSQLDATABASE");
-$port = getenv("MYSQLPORT");
+$password = getenv("UIZmbWXwMOeoOSoatLBVhMHLoswvOYbS");
+$database = getenv("railway");
+$port = getenv("3306");
 
 // Optional: fallback hardcoded untuk development
 // $host = 'crossover.proxy.rlwy.net';

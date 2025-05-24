@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS lost_found_db;
-USE lost_found_db;
+CREATE DATABASE IF NOT EXISTS railway;
+USE railway;
 
 CREATE TABLE IF NOT EXISTS lost_items (
   id INT AUTO_INCREMENT PRIMARY KEY,

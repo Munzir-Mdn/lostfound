@@ -1,13 +1,18 @@
 <?php
-// Ambil maklumat dari Railway Environment Variables
-$host = getenv("MYSQLHOST");
-$user = getenv("MYSQLUSER");
-$password = getenv("MYSQLPASSWORD");
-$database = getenv("MYSQLDATABASE");
-$port = getenv("MYSQLPORT");
+$host = getenv("crossover.proxy.rlwy.net");
+$username = getenv("MYSQLUSER");
+$password = getenv("UIZmbWXwMOeoOSoatLBVhMHLoswvOYbS");
+$database = getenv("railway");
+$port = getenv("3306");
 
-// Sambung ke pangkalan data
-$conn = new mysqli($host, $user, $password, $database, $port);
+// Optional: fallback hardcoded untuk development
+// $host = 'crossover.proxy.rlwy.net';
+// $username = 'root';
+// $password = 'password_di_sini';
+// $database = 'railway';
+// $port = 42850;
+
+$conn = new mysqli($host, $username, $password, $database, $port);
 
 // Semak sambungan
 if ($conn->connect_error) {
