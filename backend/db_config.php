@@ -1,14 +1,12 @@
 <?php
-$host = "mysql.railway.internal";   // contoh host dari Railway
-$user = "root";                                  // user dari Railway
-$pass = "UIZmbWXwMOeoOSoatLBVhMHLoswvOYbS";             // password dari Railway
-$db   = "railway";                               // nama database dari Railway
-$port = 3306;                                     // port dari Railway
+$host = getenv("MYSQLHOST") ?: "localhost";
+$user = getenv("MYSQLUSER") ?: "root";
+$pass = getenv("MYSQLPASSWORD") ?: "";
+$db   = getenv("MYSQLDATABASE") ?: "lost_found";
 
-$conn = new mysqli($host, $user, $pass, $db, $port);
+$conn = new mysqli($host, $user, $pass, $db);
 
-// Semak sambungan
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+  die("Connection failed: " . $conn->connect_error);
 }
 ?>
