@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'db_config.php'; // Assumes connection is defined here
+require_once(__DIR__ . "/../db_config.php"); // Betulkan path ke fail konfigurasi DB
 
 $valid_user = "admin";
 $valid_pass = "admin123";
