@@ -11,3 +11,8 @@
 - admin.php: Panel admin
 - backend/: Semua fail PHP API
 - sql/: Struktur pangkalan data
+
+## Live Demo
+
+You can deploy it using:
+- Railway: [[https://lostfound-production.up.railway.app/](https://lostfound-production.up.railway.app/index.html)]
